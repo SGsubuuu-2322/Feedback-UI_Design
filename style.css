@@ -51,3 +51,35 @@ body {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.rating img {
+  width: 40px;
+}
+
+.rating small {
+  display: inline-block;
+  margin: 10px 0 0;
+  color: #777;
+}
+
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
+
+.btn {
+  background: #302d2b;
+  color: #fff;
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
