@@ -1,10 +1,11 @@
 const panel = document.getElementById("panel");
 const sendBtn = document.getElementById("send");
 const ratings = document.querySelectorAll(".rating");
+const ratingsContainer = document.querySelector(".ratings-container");
 
 let selectedRating = "satisfied";
 
-panel.addEventListener("click", (e) => {
+ratingsContainer.addEventListener("click", (e) => {
   if (e.target.parentNode.classList.contains("rating")) {
     removeActive();
     e.target.parentNode.classList.add("active");
